@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Armamento COD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>MODOS</h2>
+      <button onclick="cargarArmas('warzone')">Warzone</button>
+      <button onclick="cargarArmas('blackops6')">Black Ops 6</button>
+
+      <!-- Redes Sociales -->
+      <div class="social-media">
+        <h3>Sígueme</h3>
+        <a href="https://www.tiktok.com/@derickesv" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/channel/derickesvl" target="_blank">YouTube</a>
+        <a href="https://www.twitch.tv/derickesv" target="_blank">Twitch</a>
+        <a href="https://www.instagram.com/derickesv" target="_blank">Instagram</a>
+        <a href="https://discord.com/users/derickesv" target="_blank">Discord</a>
+      </div>
+    </aside>
+    
+    <main class="main-content">
+      <h1 id="titulo">Selecciona un juego</h1>
+
+      <!-- BOTONES PRINCIPALES -->
+      <div class="modos-principales" id="modos-principales">
+        <div class="modo-card" onclick="cargarModoDesdeBoton('warzone')">
+          <img src="assets/warzone.jpg" alt="Warzone">
+          <h2>Warzone</h2>
+        </div>
+        <div class="modo-card" onclick="cargarModoDesdeBoton('blackops6')">
+          <img src="assets/blackops6.jpg" alt="Black Ops 6">
+          <h2>Black Ops 6</h2>
+        </div>
+      </div>
+
+      <!-- CONTENEDOR DE ARMAS -->
+      <div id="armas-container" class="armas-grid"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
