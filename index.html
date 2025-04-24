@@ -4,34 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meta de Warzone</title>
-  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>🔥 LOADOUTS WARZONE 🔥</header>
-
-  <div class="highlight">LISTA ACTUALIZADA DE ARMAS META</div>
-
+  <header id="main-title"></header>
+  <div class="highlight" id="highlight"></div>
   <div class="search-bar">
-    <input type="text" id="searchInput" oninput="filterWeapons()" placeholder="Buscar arma...">
+    <input type="text" id="searchInput" oninput="filterWeapons()">
   </div>
-
   <div class="filter-bar">
-    <select id="categorySelect" onchange="filterWeapons()">
-      <option value="Todas">Todas las categorías</option>
-      <option value="Rifle de precisión">Rifle de precisión</option>
-      <option value="Rifle de asalto">Rifle de asalto</option>
+    <select id="categorySelect" onchange="filterWeapons()"></select>
+  </div>
+  <div class="weapon-list"></div>
+  <div class="creator-info"></div>
+  <div class="language-select-container">
+    <select id="languageSelect" onchange="changeLanguage()">
+      <option value="es">Español</option>
+      <option value="en">English</option>
     </select>
   </div>
-
-  <div class="weapon-list"></div>
-
-  <div class="creator-info">
-    Página creada por <strong>@DericKesv</strong> · Sígueme en:
-    <a href="https://tiktok.com/@DericKesv" target="_blank">TikTok</a> |
-    <a href="https://twitch.tv/DericKesv" target="_blank">Twitch</a> |
-    <a href="https://instagram.com/DericKesv" target="_blank">Instagram</a>
-  </div>
-
-  <script src="scripts/main.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
